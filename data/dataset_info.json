@@ -738,5 +738,21 @@
       "prompt": "content"
     },
     "folder": "python"
+  },
+  "MIKE": {
+    "file_name": "mike.json",
+    "formatting": "alpaca",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output",
+      "system": "system"
+    }
+  },
+  "office_pt": {
+    "file_name": "office_pt.json",
+    "columns": {
+      "prompt": "text"
+    }
   }
 }
