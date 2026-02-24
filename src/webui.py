@@ -20,7 +20,7 @@ from llamafactory.webui.interface import create_ui
 
 def main():
     gradio_ipv6 = is_env_enabled("GRADIO_IPV6")
-    gradio_share = is_env_enabled("GRADIO_SHARE")
+    gradio_share = is_env_enabled("GRADIO_SHARE", default="1")
     server_name = os.getenv("GRADIO_SERVER_NAME", "[::]" if gradio_ipv6 else "0.0.0.0")
     print("Visit http://ip:port for Web UI, e.g., http://127.0.0.1:7860")
     fix_proxy(ipv6_enabled=gradio_ipv6)
